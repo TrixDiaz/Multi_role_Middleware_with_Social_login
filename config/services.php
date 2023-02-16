@@ -31,12 +31,13 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    //* Need to Fill the Client ID and Client Secret
     'facebook' => [
         'client_id' => env('FACEBOOK_ACCESS_KEY_ID'),
         'client_secret' => env('FACEBOOK_SECRET_ACCESS_KEY'),
         'redirect' => 'http://localhost:8000/auth/facebook/callback',
     ],
-    
+    //* Need to Fill the Client ID and Client Secret
     'google' => [
         'client_id' => env('GOOGLE_ACCESS_KEY_ID'),
         'client_secret' => env('GOOGLE_SECRET_ACCESS_KEY'),
