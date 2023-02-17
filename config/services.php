@@ -33,14 +33,14 @@ return [
 
     //* Need to Fill the Client ID and Client Secret
     'facebook' => [
-        'client_id' => env('FACEBOOK_ACCESS_KEY_ID'),
-        'client_secret' => env('FACEBOOK_SECRET_ACCESS_KEY'),
+        'client_id' => '600175468592387',
+        'client_secret' => '7675caf06415c1504b85965bbbc58e2b',
         'redirect' => 'http://localhost:8000/auth/facebook/callback',
     ],
-    //* Need to Fill the Client ID and Client Secret
+    //* Need to Fill the Client phpID and Client Secret
     'google' => [
-        'client_id' => env('GOOGLE_ACCESS_KEY_ID'),
-        'client_secret' => env('GOOGLE_SECRET_ACCESS_KEY'),
+        'client_id' => '702487726634-r7efk73asntqsif6856s9p7sk4gepvgo.apps.googleusercontent.com',
+        'client_secret' => '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',
         'redirect' => 'http://localhost:8000/auth/google/callback',
     ],
 

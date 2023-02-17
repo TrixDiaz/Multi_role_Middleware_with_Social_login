@@ -3,18 +3,23 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6 mt-5">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                {{-- <div class="card-header">{{ __('Register') }}</div> --}}
+                
 
-                <div class="card-body">
+                <div class="card-body mt-3 mx-5">
+
+                    <div class="h1 fw-bold">Sign up</div>
+
+
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                            <label for="name" class="col-form-label">{{ __('Name') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
@@ -26,9 +31,9 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="username" class="col-md-4 col-form-label text-md-end">{{ __('Username') }}</label>
+                            <label for="username" class="col-form-label">{{ __('Username') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username">
 
                                 @error('username')
@@ -40,9 +45,9 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                            <label for="password" class="col-form-label">{{ __('Password') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                 @error('password')
@@ -54,16 +59,16 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="col-form-label">{{ __('Confirm Password') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
 
                         <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-md-12 mt-3 mb-3">
+                                <button type="submit" class="btn btn-outline-primary form-control shadow">
                                     {{ __('Register') }}
                                 </button>
                             </div>
