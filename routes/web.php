@@ -1,8 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\SocialController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,13 +31,13 @@ Route::middleware(['auth','user-role:user'])->group(function()
 // Editor Route
 Route::middleware(['auth','user-role:editor'])->group(function()
 {
-    Route::get("/editor/home",[HomeController::class,'editorHome'])->name('home.editor');
+    Route::get("/editor/home",[editor\EditorController::class,'editorHome'])->name('home.editor');
 });
 
 // Admin Route
 Route::middleware(['auth','user-role:admin'])->group(function()
 {
-    Route::get("/admin/home",[HomeController::class,'adminHome'])->name('home.admin');
+    Route::get("/admin/home",[admin\AdminController::class,'adminHome'])->name('home.admin');
 });
 
 

@@ -1,3 +1,4 @@
+<x-messages/>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -128,5 +129,8 @@
                 </div>
             </div>
         </div>
+
+        {{-- Alpine JS --}}
+        <script src="//unpkg.com/alpinejs" defer></script>
     </body>
 </html>
