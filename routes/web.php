@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\admin;
+use App\Http\Controllers\editor;
 use App\Http\Controllers\SocialController;
 
 /*
