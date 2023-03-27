@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\admin;
-use App\Http\Controllers\editor;
+use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\editor\EditorController;
 use App\Http\Controllers\SocialController;
 
 /*
@@ -32,13 +32,13 @@ Route::middleware(['auth','user-role:user'])->group(function()
 // Editor Route
 Route::middleware(['auth','user-role:editor'])->group(function()
 {
-    Route::get("/editor/home",[editor\EditorController::class,'editorHome'])->name('home.editor');
+    Route::get("/editor/home",[EditorController::class,'editorHome'])->name('home.editor');
 });
 
 // Admin Route
 Route::middleware(['auth','user-role:admin'])->group(function()
 {
-    Route::get("/admin/home",[admin\AdminController::class,'adminHome'])->name('home.admin');
+    Route::get("/admin/home",[AdminController::class,'adminHome'])->name('home.admin');
 });
 
 
