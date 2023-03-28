@@ -22,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('apirequest', [CrudController::class, 'index']);
 Route::post('apirequest', [CrudController::class, 'store']);
+Route::get('apirequest/{id}', [CrudController::class, 'show']);
