@@ -23,3 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('apirequest', [CrudController::class, 'index']);
 Route::post('apirequest', [CrudController::class, 'store']);
 Route::get('apirequest/{id}', [CrudController::class, 'show']);
+Route::get('apirequest/{id}/edit', [CrudController::class, 'edit']);
+Route::put('apirequest/{id}/update', [CrudController::class, 'update']);
+Route::put('apirequest/{id}/destroy', [CrudController::class, 'destroy']);
