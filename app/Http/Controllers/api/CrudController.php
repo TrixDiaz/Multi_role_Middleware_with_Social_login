@@ -168,9 +168,18 @@ class CrudController extends Controller
 
         if($users){
 
-            
+            $users->delete();
+
+            return response()->json([
+                'status'  => 200,
+                'message' => 'Account Successfully Deleted!'
+            ], 200);
         }else{
 
+            return response()->json([
+                'status'  => 404,
+                'message' => 'No Account Found!'
+            ], 404);
         }
     }
 }
