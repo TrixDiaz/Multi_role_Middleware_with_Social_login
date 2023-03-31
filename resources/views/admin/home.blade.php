@@ -10,33 +10,33 @@
                 </a>
                 <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
                     <li class="nav-item">
-                        <a href="#" class="nav-link py-3 px-2 border-bottom border-top" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                        <a href="#" class="nav-link py-3 px-2 border-top" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
                             <i class="bi-house fs-1"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link py-3 px-2 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+                        <a href="#" class="nav-link py-3 px-2 border-top" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
                             <i class="bi-speedometer2 fs-1"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link py-3 px-2 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
+                        <a href="#" class="nav-link py-3 px-2 border-top" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
                             <i class="bi-table fs-1"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link py-3 px-2 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+                        <a href="#" class="nav-link py-3 px-2 border-top" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
                             <i class="bi-heart fs-1"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link py-3 px-2 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                        <a href="#" class="nav-link py-3 px-2 border-top" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
                             <i class="bi-people fs-1"></i>
                         </a>
                     </li>
                 </ul>
                 <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle border-top" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi-person-circle h2"></i>
                     </a>
                     <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
