@@ -25,9 +25,22 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-secondary shadow-sm rounded-pill mx-4 mt-3">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('#') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
+                    @guest
+                    {{-- sample if only hehe --}}
+                            @if (Auth::Check())
+                                {{-- nothing --}}
+                            @endif
+
+                        @else
+                        {{-- Display Messenger if login --}}
+                        <a 
+                          class="navbar-brand" href="{{ route('chatify') }}">{{ __('Messenger') }}
+                       </a>
+
+                       @endguest
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -54,6 +67,7 @@
                                 </li>
                             @endif
                         @else
+                            
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->firstName }}
@@ -73,6 +87,7 @@
                             </li>
                         @endguest
                     </ul>
+                    
                 </div>
             </div>
         </nav>
