@@ -34,7 +34,7 @@ class CrudController extends Controller
         $validator = Validator::make($request->all(),[
             'firstName'  =>  'required|string|max:191',
             'lastName'   =>  'required|string|max:191',
-            'middleName' =>  'required|string|max:191',
+            'middleName' =>  'nullable|string|max:191',
             'username'   =>  ['required', Rule::unique('users', 'username')],
             'email'      =>  ['required', 'email', Rule::unique('users', 'email')],
             'password'   =>  'nullable|string|max:191',
@@ -119,7 +119,7 @@ class CrudController extends Controller
         $validator = Validator::make($request->all(), [
             'firstName'  =>  'required|string|max:191',
             'lastName'   =>  'required|string|max:191',
-            'middleName' =>  'required|string|max:191',
+            'middleName' =>  'nullable|string|max:191',
             'username'   =>  'required|string|max:191',
             'email'      =>  'required|string|max:191',
             'password'   =>  'nullable|string|max:191',
