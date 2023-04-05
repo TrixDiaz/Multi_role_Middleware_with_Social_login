@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('firstName')->nullable();;
             $table->string('lastName')->nullable();;
             $table->string('middleName')->nullable();
+            $table->string('name')->nullable();
             $table->string('facebook_id')->nullable();
             $table->string('google_id')->nullable();
             $table->string('apple_id')->nullable();
