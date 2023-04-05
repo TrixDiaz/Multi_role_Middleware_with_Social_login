@@ -43,12 +43,14 @@ Route::middleware(['auth','user-role:admin'])->group(function()
 
 
 //! Facebook Login Routes
-Route::get('auth/facebook', 'App\Http\Controllers\SocialController@facebookRedirect');
-Route::get('auth/facebook/callback', 'App\Http\Controllers\SocialController@loginWithFacebook');
+// Route::get('auth/facebook', 'App\Http\ControllersSocialController@facebookRedirect');
+// Route::get('auth/facebook/callback', 'App\Http\ControllersSocialController@loginWithFacebook');
 
 //! Google Login Routes 
 Route::controller(SocialController::class)->group(function(){
     Route::get('auth/google', 'redirectToGoogle')->name('auth.google');
     Route::get('auth/google/callback', 'handleGoogleCallback');
+    Route::get('auth/facebook', 'facebookRedirect');
+    Route::get('auth/facebook\callback', 'loginWithFacebook');
 
 });

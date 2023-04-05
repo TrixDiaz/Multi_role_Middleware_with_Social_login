@@ -24,7 +24,7 @@ class SocialController extends Controller
                 return redirect('/home');
             }else{
                 $createUser = User::create([
-                    'name' => $user->name,
+                   // 'name' => $user->name,
                     'email' => $user->email,
                     'facebook_id' => $user->id,
                     // 'password' => encrypt('password')
@@ -54,7 +54,7 @@ class SocialController extends Controller
                 return redirect('/home');
             }else{
                 $createUser = User::create([
-                    'name' => $user->name,
+                  //  'name' => $user->name,
                     'email' => $user->email,
                     'google_id' => $user->id,
                   //  'password' => encrypt('password')

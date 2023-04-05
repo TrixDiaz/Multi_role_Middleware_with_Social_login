@@ -33,8 +33,8 @@ return [
 
     //* Need to Fill the Client ID and Client Secret
     'facebook' => [
-        'client_id' => '600175468592387',
-        'client_secret' => '7675caf06415c1504b85965bbbc58e2b',
+        'client_id' => '568181391999175',
+        'client_secret' => 'c6594ecea9e41bf3bd132597d87afcc4',
         'redirect' => 'http://localhost:8000/auth/facebook/callback',
     ],
     //* Need to Fill the Client phpID and Client Secret
